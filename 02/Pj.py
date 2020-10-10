@@ -49,7 +49,7 @@ some_l = [some_st]
 print(some_l)
 for i in mod_l:
     print(mod_l[i])"""
-
+'''
 my_list = [7, 5, 3, 3, 2]
 s = int(input("Введите число"))
 i = 0
@@ -61,5 +61,19 @@ while my_list[i] > s:
     i += 1
 my_list.insert(i, s)
 print(my_list)
+'''
+x = []
+n = int(input("Введите количество товаров "))
+for i  in range(n):
+    name = input(f"Введите название товара номер {i + 1} ")
+    price = input(f"Введите цену {name} ")
+    k =input(f"Введите количество {name} ")
+    e = input("Введите ед. ")
+    my_d = dict(Название=name, цена = price, количкство=k, ед=e)
+    cort = tuple(my_d)
+    x.append(cort)
+
+print(my_d)
+print(x)
 
 
